@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#456962"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/signinemailedittextid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff">
+
+    </EditText>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/signinpasswordedittextid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff">
+
+    </EditText>
+
+    <Button
+        android:text="Sign In"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:id="@+id/signinButtonId"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <TextView
+        android:text="Are you not reigistered? Sign Up?"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:id="@+id/SignUpTextViewId"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressbarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+</LinearLayout>
